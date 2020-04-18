@@ -23,7 +23,7 @@ services:
     environment:
       SERVICE_PRECONDITION: "namenode:9870"
     ports:
-      -9982:9864
+      - 9982:9864
     env_file:
       - ./hadoop.env
   datanode2:
@@ -35,7 +35,7 @@ services:
     environment:
       SERVICE_PRECONDITION: "namenode:9870"
     ports:
-      -9982:9864
+      - 9982:9864
     env_file:
       - ./hadoop.env
   datanode3:
@@ -43,7 +43,7 @@ services:
     container_name: datanode3
     restart: always
     ports:
-      -9983:9864
+      - 9983:9864
     volumes:
       - hadoop_datanode3:/hadoop/dfs/data
     environment:
