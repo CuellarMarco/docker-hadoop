@@ -23,7 +23,7 @@ services:
     environment:
       SERVICE_PRECONDITION: "namenode:9870"
     ports:
-      - 9982:9864
+      - 9981:9864
     env_file:
       - ./hadoop.env
   datanode2:
